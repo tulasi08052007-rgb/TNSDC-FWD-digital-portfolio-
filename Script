@@ -1,0 +1,13 @@
+
+document.querySelector('#contact button').addEventListener('click', (e) => {
+    e.preventDefault()
+    const name = document.querySelector('#contact input[type="text"]').value;
+    const email = document.querySelector('#contact input[type="email"]').value;
+    const message = document.querySelector('#contact textarea').value;
+    if (name && email && message) {
+        // Send the form data to the server or display a success message
+        console.log('Form submitted successfully!');
+    } else {
+        console.log('Please fill out all fields.');
+    }
+});
